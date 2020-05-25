@@ -18,7 +18,7 @@ publish: compile git-conditional-commit
 
 git-conditional-commit:
 	cd public
-	echo $$(PWD)
+	echo $(PWD)
 	@if [ $$(git status -s | grep -c 'M\|??\|A') != "0" ]; then \
 		git add --all; \
 		git commit -m "commiting to gh-pages @ $$(/bin/date)"; \
