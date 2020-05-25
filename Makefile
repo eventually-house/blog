@@ -8,22 +8,26 @@ compile:
 # for more information see:
 # https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-your-gh-pages-branch
 publish: compile
-	cd public && \
-	git add --all && \
-	git commit -m "Publishing to gh-pages" &&
-	git push upstream gh-pages && \
-	cd ..
+	git push upstream gh-pages
 
 #------------------
 #-- tools
 #------------------
+
+git-conditional-commit:
+	cd public
+	if [ $$(git status -s | grep -c 'M\|??\|A') != "0" ]; then \
+		git add --all; \
+		git commit -m "commiting to gh-pages"; \
+	fi
+	cd ..
 
 # used in CI in order to not duplicate the specification of GO_VERSION
 hugo-version:
 	@echo $(HUGO_VERSION)
 
 validate-hugo-version:
-	@if [ $$(hugo version | awk '{print substr($$5, 2, 4)}' != "$(HUGO_VERSION)" ]; then \
+	@if [ $$(hugo version | awk '{print substr($$5, 2, 4)}') != "$(HUGO_VERSION)" ]; then \
 		echo "==================================================================="; \
 		echo "Must be using Hugo $(HUGO_VERSION)"; \
 		echo "Please install the correct feature version to compile this project."; \
