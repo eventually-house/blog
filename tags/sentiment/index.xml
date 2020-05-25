@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sentiment on eventually.house</title>
+    <link>https://eventually.house/tags/sentiment/</link>
+    <description>Recent content in sentiment on eventually.house</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 May 2020 13:35:03 -0700</lastBuildDate>
+    
+	<atom:link href="https://eventually.house/tags/sentiment/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>State of the Union</title>
+      <link>https://eventually.house/post/state-of-the-union/</link>
+      <pubDate>Mon, 25 May 2020 13:35:03 -0700</pubDate>
+      
+      <guid>https://eventually.house/post/state-of-the-union/</guid>
+      <description>In the summer of 2019 my fiancé and I purchased a home in Belmont, California that was originally built in 1946. Our house is in need of a lot of work - the property is not livable in its current state and this blog is our effort to document what will surely be an extensive renovation process, along with navigating and learning about the various big choices we will have to make along the way.</description>
+    </item>
+    
+  </channel>
+</rss>

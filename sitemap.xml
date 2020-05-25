@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://eventually.house/</loc>
+    <lastmod>2020-05-25T13:35:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eventually.house/post/</loc>
+    <lastmod>2020-05-25T13:35:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eventually.house/tags/sentiment/</loc>
+    <lastmod>2020-05-25T13:35:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eventually.house/post/state-of-the-union/</loc>
+    <lastmod>2020-05-25T13:35:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eventually.house/tags/</loc>
+    <lastmod>2020-05-25T13:35:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://eventually.house/categories/</loc>
+  </url>
+  
+</urlset>
