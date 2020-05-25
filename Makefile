@@ -9,7 +9,7 @@ compile:
 # https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-your-gh-pages-branch
 publish: compile git-conditional-commit
 	cd public
-	git push upstream gh-pages
+	git push origin gh-pages
 	cd ..
 
 #------------------
