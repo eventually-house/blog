@@ -20,7 +20,7 @@ git-conditional-commit:
 	cd public
 	@if [ $$(git status -s | grep -c 'M\|??\|A') != "0" ]; then \
 		git add --all; \
-		git commit -m "commiting to gh-pages"; \
+		git commit -m "commiting to gh-pages @ $$(/bin/date)"; \
 	fi
 	cd ..
 
