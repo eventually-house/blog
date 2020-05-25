@@ -20,3 +20,4 @@ The wider land on the property is brimming with trees and vegetation - we have 5
 
 Ideally at the end of this process, we will be able to move into a modern, well crafted home that fits its surroundings and is highly energy efficient. The property is well suited to a solar installation, as being “solar ready” is now part of the California building code (since 2019), so whatever we come up with will have to support solar.
 
+TEST4
