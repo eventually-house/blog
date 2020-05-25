@@ -10,8 +10,9 @@ compile:
 publish: compile
 	cd public && \
 	git add --all && \
-	git commit -m "Publishing to gh-pages" \
-	&& cd ..
+	git commit -m "Publishing to gh-pages" &&
+	git push upstream gh-pages && \
+	cd ..
 
 #------------------
 #-- tools
