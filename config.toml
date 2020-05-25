@@ -1,0 +1,15 @@
+baseURL = "https://eventually.house/"
+
+title = "eventually.house"
+
+theme = "arabica"
+
+author = "Timothy Perrett"
+
+languageCode = "en-us"
+
+paginate = 3
+
+[params]
+    description = "Slowly Building our dream home."
+    dateFormatToUse = "2006.01.02"
