@@ -1,0 +1,10 @@
+{{ define "main" }}
+{{.Content}}
+<ul class="all-posts">
+  {{range .Site.RegularPages}}
+    {{ if hasPrefix .File "post/" }}
+    <li>{{ .PublishDate.Format "January 2, 2006" }} &mdash; <a href="{{.Permalink}}">{{.Title}}</a></li>
+    {{end}}
+  {{end}}
+</ul>
+{{ end }}

@@ -1,7 +1,8 @@
 +++
 title = "State of the Union"
-date = 2020-05-25T13:35:03-07:00
+date = 2020-05-20T13:35:03-07:00
 tags = [ "sentiment" ]
+image = "/img/IMG_9228.jpeg"
 +++
 
 In the summer of 2019 my fiancé and I purchased a home in Belmont, California that was originally built in 1946. Our house is in need of a lot of work - the property is not livable in its current state and this blog is our effort to document what will surely be an extensive renovation process, along with navigating and learning about the various big choices we will have to make along the way.
@@ -19,5 +20,3 @@ The wider land on the property is brimming with trees and vegetation - we have 5
 ## What we aim to achieve
 
 Ideally at the end of this process, we will be able to move into a modern, well crafted home that fits its surroundings and is highly energy efficient. The property is well suited to a solar installation, as being “solar ready” is now part of the California building code (since 2019), so whatever we come up with will have to support solar.
-
-TEST5

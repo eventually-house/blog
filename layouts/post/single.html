@@ -1,0 +1,53 @@
+{{ define "body_class" }}post-template{{ end }}
+{{ define "main" }}
+<main class="content" role="main">
+  <article class="post">
+    <header class="post-header">
+      {{ with .Params.image }}
+        <img src="{{ . }}"></img>
+      {{ end }}
+      <h2 class="post-title">{{ .Title }}</h2>
+      <section class="post-meta">
+        <time class="post-date">{{ .Date.Format (.Site.Params.dateFormatToUse | default "January 02, 2006") }}</time>
+      </section>
+    </header>
+    <section class="post-content">
+      {{ .Content }}
+    </section>
+    <footer class="post-footer">
+      {{ with .Params.tags -}}
+      <section class="tags post-meta">
+        Tagged
+        {{ range . }}
+        {{- $name := . -}}
+          {{- with $.Site.GetPage "taxonomy" (printf "tags/%s" $name) | default ($.Site.GetPage "taxonomy" (printf "tags/%s" ($name | urlize))) -}}
+          <a href="{{ .Permalink }}">{{ $name }}</a>
+          {{ end -}}
+        {{ end }}
+
+        <br />
+        <br />
+        <div id="disqus_thread"></div>
+
+      </section>
+      {{- end }}
+    </footer>
+  </article>
+
+
+<script>
+    var disqus_config = function () {
+    this.page.url = "https://eventually.house";  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = ""; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://eventually-house.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script id="dsq-count-scr" src="//eventually-house.disqus.com/count.js" async></script>
+</main>
+{{ end }}

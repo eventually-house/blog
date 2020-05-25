@@ -19,6 +19,9 @@ publish: compile git-conditional-commit
 	cd public && \
 	git push origin gh-pages
 
+serve:
+	hugo serve -w
+
 #------------------
 #-- tools
 #------------------
