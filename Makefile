@@ -17,7 +17,7 @@ publish: compile git-conditional-commit
 #------------------
 
 git-conditional-commit:
-	cd public
+	cd ./public && \
 	echo $(PWD)
 	@if [ $$(git status -s | grep -c 'M\|??\|A') != "0" ]; then \
 		git add --all; \
