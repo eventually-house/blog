@@ -3,11 +3,11 @@ HUGO_VERSION?=0.71
 all: compile
 
 compile:
-	hugo
+	@hugo
 
 # for more information see:
 # https://gohugo.io/hosting-and-deployment/hosting-on-github/#deployment-of-project-pages-from-your-gh-pages-branch
-publish: compile
+publish: compile git-conditional-commit
 	git push upstream gh-pages
 
 #------------------
@@ -16,7 +16,7 @@ publish: compile
 
 git-conditional-commit:
 	cd public
-	if [ $$(git status -s | grep -c 'M\|??\|A') != "0" ]; then \
+	@if [ $$(git status -s | grep -c 'M\|??\|A') != "0" ]; then \
 		git add --all; \
 		git commit -m "commiting to gh-pages"; \
 	fi
